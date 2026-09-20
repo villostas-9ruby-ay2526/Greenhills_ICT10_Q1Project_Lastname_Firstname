@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKU Generator</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+    <body>
+        <div>
+            <form>
+            <h1>Standard Hotdog Stand</h1>
+                <hr>
+                <label>Menu:</label>
+                <input class="btn btn-danger" py-click="normal" id="normal_opt" value="Normal Hotdog"></input>
+                <input class="btn btn-danger" py-click="cheese" id="cheese_opt" value="Cheese Hotdog"></input>
+                <input class="btn btn-danger" py-click="bacon" id="bacon_opt" value="Bacon Hotdog"></input>
+                <input class="btn btn-danger" py-click="chicken" id="chicken_opt" value="Chicken Hotdog"></input>
+                <br>
+                <hr>
+                <label for="w_stocks">Stock Quantity</label>
+                <input type="number" id="w_stocks" placeholder="e.g. 30">
+                <br>
+                <h3>☆*: .｡. Generate your SKU .｡.:*☆</h3>
+                
+            <form>
+            
+
+                <div>
+                    <h1 id="thank_you_po"></h1>
+                    <h3 id="much_love_po"></h3>
+                    <p id="you_rock_po"></p>
+                </div>
+        </div>
+        <py-script src="main.py"></py-script>  
+    </body>
+</html>
